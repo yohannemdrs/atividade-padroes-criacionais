@@ -1,6 +1,6 @@
 package br.edu.ifpb.ads.padroes.atv1.rpg;
 
-public class Arma {
+public final class Arma {
 
     private String nome;
     private int dano;
@@ -22,5 +22,10 @@ public class Arma {
 
     public String getTipo() {
         return tipo;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Nome: %s, Dano: %d, Tipo: %s", nome, dano, tipo);
     }
 }

@@ -86,7 +86,6 @@ public class CriadorPersonagem {
                 habilidades = new String[]{"Fúria", "Pancada Devastadora"};
 
             } else if (classe.equals("Mago")) {
-                // PROBLEMA: Combinação estranha, mas o código permite
                 forca = 10;
                 inteligencia = 14;
                 agilidade = 6;
@@ -108,7 +107,6 @@ public class CriadorPersonagem {
             }
         }
 
-        // Retorna null se combinação inválida
         if (arma == null) {
             System.out.println("Combinação inválida: " + raca + " " + classe);
             return null;
